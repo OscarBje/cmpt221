@@ -1,7 +1,7 @@
 """app.py: render and route to webpages"""
 from flask import render_template
 
-from server import *
+from db.server import app
 
 # create a webpage based off of the html in templates/index.html
 @app.route('/')
