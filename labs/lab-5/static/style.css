@@ -1,14 +1,15 @@
 body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: blueviolet;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-    text-align: center;
-  }
+  background-color: rgb(222, 116, 41);
+}
+
+h1 {
+  color: rgb(207, 227, 25);
+  text-align: center;
+}
+
+p {
+  color: rgb(207, 227, 25);
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
