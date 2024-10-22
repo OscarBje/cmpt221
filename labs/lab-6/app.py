@@ -15,7 +15,7 @@ def index():
 @app.route('/signup')
 def signup():
     return render_template('signup.html')
-     return render_template('signup.html')
+    
     frstnm = request.form['First Name']
     lstnm = request.form['Last Name']
     email = request.form['Email']
