@@ -15,6 +15,18 @@ def index():
 @app.route('/signup')
 def signup():
     return render_template('signup.html')
+     return render_template('signup.html')
+    frstnm = request.form['First Name']
+    lstnm = request.form['Last Name']
+    email = request.form['Email']
+    phnr = request.form['Phone Number']
+    pswrd = request.form['Password']
+    new_user = User(frstnm=frstnm, lstnm=lastnm, email=email, phnr=phnr, pswrd=pswrd)
+
+    db.session.add(new_user)
+    db.session.commit()
+
+    return redirect(url_for('users'))
 
 @app.route('/login')
 def login():
