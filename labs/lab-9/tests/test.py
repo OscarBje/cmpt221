@@ -9,6 +9,11 @@ def test_db_connection(db_session):
     result = db_session.execute(text("SELECT 1"))
     assert result.scalar() == 1
 
+def test_user_login(db_session, sample_login_input):
+    login_data = sample_login_input
+    user = db_session.query(User).filter_by(Email=login_data['Email']).first()
+    
+
 # test to insert a user
 # you can count this as one of your 5 test cases :)
 def test_insert_user(db_session, sample_signup_input):
